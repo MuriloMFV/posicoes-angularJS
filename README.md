@@ -1,9 +1,9 @@
-##Painel de Posições – AngularJS
+## Painel de Posições – AngularJS
 
 Aplicação em AngularJS 1.8 que consome a API de posições e exibe uma tabela com filtros, ordenação e resumo.
 O projeto foi desenvolvido para o desafio técnico.
 
-##Funcionalidades
+## Funcionalidades
 
 -Exibe dados da API em tabela responsiva
 -Ordenação ao clicar no cabeçalho (asc/desc)
@@ -22,7 +22,7 @@ Estados de UI: carregando, erro, lista vazia
 Layout responsivo usando Bootstrap
 
 
-##API
+## API
 
 Endpoint:
 
@@ -79,7 +79,7 @@ node server.js
 npm start
 ```
 
-##Notas técnicas
+## Notas técnicas
 
 Framework: AngularJS 1.8
 
@@ -88,5 +88,7 @@ CSS: Bootstrap 3.4.1
 Arquitetura: separação em módulo principal, controller, service e view
 
 Filtro customizado: para aplicar filtros de Tipo e Ignição
+
+Servidor: Proxy
 
 
