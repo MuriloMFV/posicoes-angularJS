@@ -61,8 +61,8 @@ npm install express cors dotenv
 
 ### 2. Clonar o repositório (ou baixar o ZIP do projeto)
 ```bash
-https://github.com/MuriloMFV/painel-posicoes-react.git
-cd painel-posicoes-react
+https://github.com/MuriloMFV/posicoes-angularJS.git
+cd posicoes-angularJS
 ```
 
 ### 3. Rodar o Servidor Proxy
