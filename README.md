@@ -1,4 +1,4 @@
-## Painel de Posições – AngularJS
+## Desafio Selsyn - Painel de Posições AngularJS
 
 Aplicação em AngularJS 1.8 que consome a API de posições e exibe uma tabela com filtros, ordenação e resumo.
 O projeto foi desenvolvido para o desafio técnico.
