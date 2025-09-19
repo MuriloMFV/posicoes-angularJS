@@ -1,0 +1,41 @@
+<!-- Estados da UI -->
+<div class="alert alert-info d-flex align-items-center" ng-if="isLoading" role="alert">
+    <div class="spinner-border me-3" role="status" aria-hidden="true"></div>
+    <div>Carregando dados...</div>
+</div>
+<div class="alert alert-danger" ng-if="isError && !isLoading">
+    Ops! Ocorreu um erro ao carregar os dados.
+</div>
+<div class="alert alert-warning" ng-if="!isLoading && !isError && filteredPositions.length === 0">
+    Nenhum registro encontrado.
+</div>
+
+<!-- Tabela de posições -->
+<div class="table-responsive" ng-if="!isLoading && !isError && filteredPositions.length > 0">
+    <table class="table table-striped table-bordered table-hover align-middle">
+        <thead class="table-light">
+            <tr>
+                <th class="sortable" ng-click="sortBy('identificador')">Identificador</th>
+                <th class="sortable" ng-click="sortBy('tipo')">Tipo</th>
+                <th class="sortable" ng-click="sortBy('latitude')">Latitude</th>
+                <th class="sortable" ng-click="sortBy('longitude')">Longitude</th>
+                <th class="sortable" ng-click="sortBy('velocidade')">Velocidade</th>
+                <th class="sortable" ng-click="sortBy('ignicao')">Ignição</th>
+                <th class="sortable" ng-click="sortBy('odometro')">Odômetro</th>
+                <th class="sortable" ng-click="sortBy('dataHora')">Data/Hora</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="position in filteredPositions | orderBy:sortColumn:sortDirection">
+                <td>{{ position.identificador }}</td>
+                <td>{{ position.tipo }}</td>
+                <td>{{ position.latitude }}</td>
+                <td>{{ position.longitude }}</td>
+                <td>{{ position.velocidade }}</td>
+                <td>{{ position.ignicao ? 'Sim' : 'Não' }}</td>
+                <td>{{ position.odometro }}</td>
+                <td>{{ position.dataHora | brDateTime }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
