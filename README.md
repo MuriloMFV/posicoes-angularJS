@@ -21,18 +21,8 @@ Estados de UI: carregando, erro, lista vazia
 
 Layout responsivo usando Bootstrap
 
-📂 Estrutura de pastas
-/app
-   app.js
-   /controllers
-       posicaoController.js
-   /services
-       posicaoService.js
-   /views
-       posicoes.html
-index.html
 
-🔑 API
+##API
 
 Endpoint:
 
